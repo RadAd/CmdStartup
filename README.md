@@ -11,5 +11,5 @@ Setup your `cmd.exe` for autorun.
 Details
 -------
 
-`Cmd.exe` can be configured to use a startup script. This is set the following registry entry:
+`Cmd.exe` can be configured to use a startup script. This is set in the following registry entry:
 `HKCU\Software\Microsoft\Command Processor\Autorun`. This installer sets up that entry for you.
