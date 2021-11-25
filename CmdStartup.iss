@@ -31,10 +31,10 @@ UninstallDisplayIcon={app}\{#MyAppName}Setup.exe
 [Code]
 #ifdef UNICODE
 #define AW "W"
-#define CharSize 2
+#define AWSizeOffset 1
 #else
 #define AW "A"
-#define CharSize 1
+#define AWSizeOffset 2
 #endif
 
 function ExpandEnvironmentStrings(lpSrc: String; lpDst: String; nSize: DWORD): DWORD;
@@ -51,7 +51,7 @@ begin
     SetLength(Buf, BufSize);  // The internal representation is probably +1 (0-termination)
     if ExpandEnvironmentStrings(Input, Buf, BufSize) = 0 then
       RaiseException(Format('Expanding env. strings failed. %s', [SysErrorMessage(DLLGetLastError)]));
-    Result := Copy(Buf, 1, BufSize - {#CharSize});
+    Result := Copy(Buf, 1, BufSize - {#AWSizeOffset});
   end
   else
     RaiseException(Format('Expanding env. strings failed. %s', [SysErrorMessage(DLLGetLastError)]));
