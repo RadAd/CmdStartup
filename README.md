@@ -6,6 +6,7 @@ Setup your `cmd.exe` for autorun.
 
 ![Windows](https://img.shields.io/badge/platform-Windows-blue.svg)
 [![Releases](https://img.shields.io/github/release/RadAd/CmdStartup.svg)](https://github.com/RadAd/CmdStartup/releases/latest)
+[![commits-since](https://img.shields.io/github/commits-since/RadAd/CmdStartup/latest.svg)](commits/master)
 [![Build](https://img.shields.io/appveyor/ci/RadAd/CmdStartup.svg)](https://ci.appveyor.com/project/RadAd/CmdStartup)
 
 Details
