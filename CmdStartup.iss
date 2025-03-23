@@ -24,7 +24,7 @@ AppModifyPath="{app}\{#MyAppName}Setup.exe" /modify=1
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
-ArchitecturesInstallIn64BitMode=x64 arm64 ia64
+ArchitecturesInstallIn64BitMode=win64
 SetupIconFile={#MyAppName}.ico
 UninstallDisplayIcon={app}\{#MyAppName}Setup.exe
 
