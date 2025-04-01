@@ -19,3 +19,8 @@ Details
 Install
 -------
 [CmdStartupSetup.exe](https://github.com/RadAd/CmdStartup/releases/latest/download/CmdStartupSetup.exe)
+
+From command line:
+```
+curl -L -O https://github.com/RadAd/CmdStartup/releases/latest/download/CmdStartupSetup.exe && start "" /Wait CmdStartupSetup.exe && del CmdStartupSetup.exe
+```
